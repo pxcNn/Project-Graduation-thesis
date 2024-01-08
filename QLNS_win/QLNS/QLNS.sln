@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNS", "QLNS.csproj", "{AA649093-4B43-4F2F-94FB-82246C5C906D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "07.2021001052NPNguyen.20DTH1_HrmHQSOFT", "..\07.2021001052NPNguyen.20DTH1_HrmHQSOFT\07.2021001052NPNguyen.20DTH1_HrmHQSOFT.vdproj", "{FAD9CBF2-6F6D-42C5-829A-487E956C826C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA649093-4B43-4F2F-94FB-82246C5C906D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA649093-4B43-4F2F-94FB-82246C5C906D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA649093-4B43-4F2F-94FB-82246C5C906D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA649093-4B43-4F2F-94FB-82246C5C906D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD9CBF2-6F6D-42C5-829A-487E956C826C}.Debug|Any CPU.ActiveCfg = Release
+		{FAD9CBF2-6F6D-42C5-829A-487E956C826C}.Debug|Any CPU.Build.0 = Release
+		{FAD9CBF2-6F6D-42C5-829A-487E956C826C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {330AC59E-BB55-48E6-A391-8736AB728B1C}
+	EndGlobalSection
+EndGlobal

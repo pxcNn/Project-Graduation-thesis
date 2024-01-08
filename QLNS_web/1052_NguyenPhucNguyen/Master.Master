@@ -1,0 +1,190 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="_1052_NguyenPhucNguyen.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Set the background color as needed */
+        }
+
+        
+        .auto-style1 {
+            width: 100%;
+
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 75px;
+            padding-bottom: 0px;
+        }
+        .auto-style5 {
+            font-size: 14pt;
+            font-family: Georgia, "Helvetica", Times, serif;
+            color: #FFFFFF;
+            font-weight: bold;
+          
+        }
+        .auto-style6 {
+            font-size: 15pt;
+            font-family: Georgia, "Helvetica", Times, serif;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .auto-style7 {
+            font-size: 25pt;
+            font-family: Georgia, "Helvetica", Times, serif;
+            font-weight: bold;
+            color: #FFFFFF;
+
+        }
+        .auto-style8 {
+            width: 1265px;
+            height: 84px;
+            text-align: center;
+            background-color: #d32027;
+            
+        }
+        .auto-style10 {
+            width: 135px;
+            height: 103px;
+        }
+        .auto-style12 {
+            width: 1050px;
+            text-align: center;
+            padding-left: 28%;
+        }
+        .loginContainer {
+           margin-right: 100px; /* Center the element horizontally */
+        }
+        
+         .auto-style16 {
+            text-align: center;
+            background-color: #FFFFFF;
+            height: 31px;
+        }
+        .auto-style17 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 15pt;
+            color: #003366;
+        }
+        
+        .auto-style18 {
+            width: 1794px;
+        }
+        .auto-style19 {
+            width: 138px;
+        }
+        
+        </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">
+                        <img alt="banner" class="auto-style4" src="Picture/hd.png" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style8">
+                                    <span class="auto-style7">HQSOFT</span><br class="auto-style5" />
+                                    <span class="auto-style6">Distribution & Retail Solution Expert</span></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style16">
+                                    <span class="auto-style17">ĐÂY LÀ DEMO PHỤC VỤ HỌC TẬP CỦA SINH VIÊN KHOA CNTT, TRƯỜNG UFM</span>
+                                    <br class="auto-style17" />
+                                    <span class="auto-style17">SINH VIÊN: NGUYỄN PHÚC NGUYÊN - MSSV: 2021001052 - UFM 2023&nbsp;</span></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style19">
+                                    <img alt="logo" class="auto-style10" longdesc="logo" src="Picture/nn.png" /></td>
+                                
+                                <td class="auto-style18">
+                                    <asp:Menu ID="Menu2" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Overline="True" Font-Size="Large" ForeColor="#003366" Orientation="Horizontal" StaticSubMenuIndent="10px" Width ="100%" Font-Strikeout="True" ItemWrap="True" OnMenuItemClick="Menu2_MenuItemClick">
+                                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                                        <DynamicMenuItemStyle HorizontalPadding="3px" VerticalPadding="2px" />
+                                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                                        <DynamicItemTemplate>
+                                            <%# Eval("Text") %>
+                                        </DynamicItemTemplate>
+                                        <Items>
+                                            <asp:MenuItem Text="TRANG CHỦ |" Value="tc"></asp:MenuItem>
+                                            <asp:MenuItem Text="VỀ HQSOFT" Value="vh">
+                                                <asp:MenuItem Text="Giới Thiệu" Value="Giới Thiệu"></asp:MenuItem>
+                                                <asp:MenuItem Text="Chính Sách" Value="Chính Sách"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                            <asp:MenuItem Text="| GIẢI PHÁP " Value="GIẢI PHÁP">
+                                                <asp:MenuItem Text="Nền Tảng Bán Lẻ Mới nRetail" Value="Nền Tảng Bán Lẻ Mới nRetail"></asp:MenuItem>
+                                                <asp:MenuItem Text="Giải pháp DMS Quản Lý Hệ Thống Phân Phối" Value="Giải pháp DMS Quản Lý Hệ Thống Phân Phối"></asp:MenuItem>
+                                                <asp:MenuItem Text="eSales PG - Giải pháp quản lý PG" Value="eSales PG - Giải pháp quản lý PG"></asp:MenuItem>
+                                                <asp:MenuItem Text="Data Warehouse &amp; BI" Value="Data Warehouse &amp; BI"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                            <asp:MenuItem Text="| ĐỐI TÁC |" Value="ĐỐI TÁC"></asp:MenuItem>
+                                            <asp:MenuItem Text="KHÁCH HÀNG |" Value="KHÁCH HÀNG"></asp:MenuItem>
+                                            <asp:MenuItem Text="THÔNG BÁO |" Value="tb"></asp:MenuItem>
+                                            <asp:MenuItem Text="KHAI BÁO THÔNG TIN" Value="kb">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem Text=" | ĐƠN XIN NGHỈ |" Value="dxn"></asp:MenuItem>
+                                            <asp:MenuItem Text="ĐƠN ĐỀ NGHỊ |" Value="ddn"></asp:MenuItem>
+                                            <asp:MenuItem Text="ĐĂNG NHẬP" Value="dn"></asp:MenuItem>
+                                            <asp:MenuItem Text="| ĐĂNG XUẤT" Value="dx"></asp:MenuItem>
+                                        </Items>
+                                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                        <StaticSelectedStyle BackColor="#FFCC66" />
+                                    </asp:Menu>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <table class="auto-style1">
+                                        <tr>
+                                <td class="auto-style12">
+                                    <asp:Login ID="Login1" runat="server" BackColor="White" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="1px" Font-Names="Tahoma" Font-Size="15pt" ForeColor="Black" Height="285px" Width="554px" LoginButtonText="ĐĂNG NHẬP" OnAuthenticate="Login1_Authenticate" PasswordLabelText="Mật khẩu:"  Font-Bold="True" RememberMeText="Ghi nhớ cho lần đăng nhập sau" TitleText="Đăng nhập" UserNameLabelText="Tên người dùng:" text-align="center" PasswordRequiredErrorMessage="Mật khẩu là bắt buộc" UserNameRequiredErrorMessage="Tên người dùng là bắt buộc" DestinationPageUrl="~/TrangChu.aspx">
+                                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                                        <LoginButtonStyle BackColor="#bc2328" Font-Bold="True" Font-Size="12pt" ForeColor="White" Height="29px" BorderStyle="None" />
+                                        <TextBoxStyle Font-Size="1.0em" />
+                                        <TitleTextStyle BackColor="#bc2328" Font-Bold="True" Font-Size="1.2em" ForeColor="White" />
+                                    </asp:Login>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+    </form>
+</body>
+</html>

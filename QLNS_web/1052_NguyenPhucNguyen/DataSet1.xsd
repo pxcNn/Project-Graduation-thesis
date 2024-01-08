@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="QLNSConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNSConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.QLNSConnectionString2.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VanBan" msprop:Generator_RowEvHandlerName="VanBanRowChangeEventHandler" msprop:Generator_RowDeletedName="VanBanRowDeleted" msprop:Generator_RowDeletingName="VanBanRowDeleting" msprop:Generator_RowEvArgName="VanBanRowChangeEvent" msprop:Generator_TablePropName="VanBan" msprop:Generator_RowChangedName="VanBanRowChanged" msprop:Generator_RowChangingName="VanBanRowChanging" msprop:Generator_TableClassName="VanBanDataTable" msprop:Generator_RowClassName="VanBanRow" msprop:Generator_TableVarName="tableVanBan" msprop:Generator_UserTableName="VanBan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaVB" msprop:Generator_ColumnPropNameInRow="MaVB" msprop:Generator_ColumnPropNameInTable="MaVBColumn" msprop:Generator_ColumnVarNameInTable="columnMaVB" msprop:Generator_UserColumnName="MaVB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenVB" msprop:Generator_ColumnPropNameInRow="TenVB" msprop:Generator_ColumnPropNameInTable="TenVBColumn" msprop:Generator_ColumnVarNameInTable="columnTenVB" msprop:Generator_UserColumnName="TenVB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaLoaiVB" msprop:Generator_ColumnPropNameInRow="MaLoaiVB" msprop:Generator_ColumnPropNameInTable="MaLoaiVBColumn" msprop:Generator_ColumnVarNameInTable="columnMaLoaiVB" msprop:Generator_UserColumnName="MaLoaiVB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoiDung" msprop:Generator_ColumnPropNameInRow="NoiDung" msprop:Generator_ColumnPropNameInTable="NoiDungColumn" msprop:Generator_ColumnVarNameInTable="columnNoiDung" msprop:Generator_UserColumnName="NoiDung">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoiGui" msprop:Generator_ColumnPropNameInRow="NoiGui" msprop:Generator_ColumnPropNameInTable="NoiGuiColumn" msprop:Generator_ColumnVarNameInTable="columnNoiGui" msprop:Generator_UserColumnName="NoiGui">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayPhatHanh" msprop:Generator_ColumnPropNameInRow="NgayPhatHanh" msprop:Generator_ColumnPropNameInTable="NgayPhatHanhColumn" msprop:Generator_ColumnVarNameInTable="columnNgayPhatHanh" msprop:Generator_UserColumnName="NgayPhatHanh" type="xs:dateTime" />
+              <xs:element name="DoiTuongApDung" msprop:Generator_ColumnPropNameInRow="DoiTuongApDung" msprop:Generator_ColumnPropNameInTable="DoiTuongApDungColumn" msprop:Generator_ColumnVarNameInTable="columnDoiTuongApDung" msprop:Generator_UserColumnName="DoiTuongApDung">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SuDung" msprop:Generator_ColumnPropNameInRow="SuDung" msprop:Generator_ColumnPropNameInTable="SuDungColumn" msprop:Generator_ColumnVarNameInTable="columnSuDung" msprop:Generator_UserColumnName="SuDung">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VanBan" />
+      <xs:field xpath="mstns:MaVB" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
